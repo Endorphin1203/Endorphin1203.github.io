@@ -42,7 +42,10 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
+        run: |
+          rm -f pnpm-lock.yaml
+          rm -rf node_modules
+          pnpm install --no-frozen-lockfile
 
       - name: Build Astro
         run: pnpm run build
