@@ -20,7 +20,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 22  # 使用稳定的 Node.js 22
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v3
@@ -45,7 +45,8 @@ jobs:
         run: pnpm install
 
       - name: Build Astro
-        run: pnpm run build
+        # 关键点：通过环境变量强制使用 Vite 的稳定构建引擎
+        run: VITE_LEGACY_BROWSER=1 pnpm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
