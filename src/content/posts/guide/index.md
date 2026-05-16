@@ -1,6 +1,6 @@
 ---
 title: Java SE
-published: 2023-5-30
+published: 2023-05-30
 pinned: true
 description: "Java基础"
 image: "./cover.avif"
