@@ -1,11 +1,11 @@
 ---
-title: Firefly 简单使用指南
-published: 1970-01-02
+title: Java SE
+published: 2023-5-30
 pinned: true
-description: "如何使用 Firefly 博客模板。"
+description: "Java基础"
 image: "./cover.avif"
-tags: ["Firefly", "博客", "Markdown", "使用指南"]
-category: 博客指南
+tags: ["Java", "博客", "技术总结"]
+category: Java SE
 draft: false
 ---
 
